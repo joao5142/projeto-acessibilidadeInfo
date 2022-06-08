@@ -5,6 +5,8 @@ const switchLight = document.getElementById("switchLight");
 const main = document.getElementById("main");
 const header = document.getElementById("header");
 const sectionBanner = document.getElementById("sectionBanner");
+const buttonNavigateTop = document.getElementById("buttonNavigateTop");
+
 let font = 16;
 let isDark = false;
 
@@ -32,7 +34,13 @@ switchLight.addEventListener("click", (e) => {
 window.addEventListener("scroll", (e) => {
   if (window.scrollY >= sectionBanner.offsetHeight) {
     header.classList.add("d-none");
+    buttonNavigateTop.classList.remove("d-none");
   } else {
     header.classList.remove("d-none");
+    buttonNavigateTop.classList.add("d-none");
   }
+});
+
+buttonNavigateTop.addEventListener("click", (e) => {
+  window.scrollTo(0, 0);
 });
