@@ -21,10 +21,10 @@ switchLight.addEventListener("click", (e) => {
   main.classList.toggle("dark");
 
   if (!isDark) {
-    switchLight.src = "assets/lightbulb-light.svg";
+    switchLight.src = "assets/lightbulb-dark.svg";
     isDark = true;
   } else {
-    switchLight.src = "assets/lightbulb-dark.svg";
+    switchLight.src = "assets/lightbulb-light.svg";
     isDark = false;
   }
 });

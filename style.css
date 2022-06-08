@@ -212,7 +212,6 @@ main {
 .footer {
     position: relative;
     height: 300px;
-
     display: flex;
     align-items: flex-end;
     justify-content: center;
