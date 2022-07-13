@@ -7,41 +7,17 @@
     <title>Acessibilidade na WEB</title>
 
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
   </head>
 
   <body>
-    <header
-      id="header"
-      class="position-fixed header d-flex justify-content-end align-items-center pa-0"
-    >
+    <header id="header" class="position-fixed header d-flex justify-content-end align-items-center pa-0">
       <nav class="d-flex flex-wrap justify-content-between header__nav">
-        <div
-          class="mt-2 header__accessibility-container"
-          aria-describedby="Aumentar ou Diminuir Fonte Texto"
-        >
-          <span
-            id="diminuirFonte"
-            class="header__font-size me-4"
-            aria-labelledby="Diminuir Texto"
-            >Aa-</span
-          >
-          <span
-            id="aumentarFonte"
-            aria-labelledby="Aumentar Texto"
-            class="header__font-size me-4"
-            >Aa+</span
-          >
+        <div class="mt-2 header__accessibility-container" aria-describedby="Aumentar ou Diminuir Fonte Texto">
+          <span id="diminuirFonte" class="header__font-size me-4" aria-labelledby="Diminuir Texto">Aa-</span>
+          <span id="aumentarFonte" aria-labelledby="Aumentar Texto" class="header__font-size me-4">Aa+</span>
 
-          <img
-            id="switchLight"
-            class="header__switch-light"
-            src="assets/lightbulb-light.svg"
-            alt=""
-          />
+          <img id="switchLight" class="header__switch-light" src="assets/lightbulb-light.svg" alt="" />
         </div>
         <ul class="header__list d-flex p-0 mt-2 me-5">
           <li><a href="#sectionBanner">Home</a></li>
@@ -54,61 +30,35 @@
     </header>
 
     <main id="main">
-      <section
-        id="sectionBanner"
-        aria-describedby="Banner Inicial do Site"
-        class="section-banner px-lg-5 px-md-5 px-xl-5 py-lg-5 py-xl-5 py-md-5 d-flex align-items-center"
-      >
+      <section id="sectionBanner" aria-describedby="Banner Inicial do Site" class="section-banner px-lg-5 px-md-5 px-xl-5 py-lg-5 py-xl-5 py-md-5 d-flex align-items-center">
         <div class="container">
           <div class="row justify-content-center align-items-center">
             <div class="col-md-6">
               <h1 class="section-banner__title">
-                <strong>Guia de Acessibilidade para WEB</strong>
+                <strong>Guia de Acessibilidade Para WEB</strong>
               </h1>
             </div>
-            <div
-              class="col-md-6"
-              aria-describedby="Imagem sobre acessibilidade"
-            >
-              <img
-                class="img-fluid"
-                src="assets/acessibilidade.png"
-                alt="Imagem Garoto Acessibilidade"
-              />
+            <div class="col-md-6" aria-describedby="Imagem sobre acessibilidade">
+              <img class="img-fluid" src="assets/accessibility.svg" alt="Imagem Garoto Acessibilidade" />
             </div>
           </div>
         </div>
       </section>
 
-      <section
-        id="sectionHTMLAcessibilidade"
-        aria-describedby="Como aplicar acessibilidade com html puro"
-        class="container section mt-5 dark"
-      >
+      <section id="sectionHTMLAcessibilidade" aria-describedby="Como aplicar acessibilidade com html puro" class="container section mt-5 dark">
         <div class="content">
           <p><br /></p>
           <p><strong>HTML PURO</strong></p>
-          <p>
-            A semântica das tags são importantes para os leitores de tela
-            indentificar o conteúdo de um elemento.
-          </p>
+          <p>A semântica das tags são importantes para os leitores de tela indentificar o conteúdo de um elemento.</p>
 
           <ul>
             <li>Usar tags semânticas do html (header,main,footer,article)</li>
-            <li>
-              A tag 'main' deve ter só uma na pagina e indica o conteúdo
-              principal.
-            </li>
-            <li>
-              A tag 'nav' usamos para menus e pode ser usada em vários lugares.
-            </li>
+            <li>A tag 'main' deve ter só uma na pagina e indica o conteúdo principal.</li>
+            <li>A tag 'nav' usamos para menus e pode ser usada em vários lugares.</li>
             <li>A tag 'section' define seções de conteúdos.</li>
           </ul>
 
-          <p>
-            Uso do tabindex , que é uma propriedade html, define se o elemento
-            pode ser selecionado ou não com a tecla tab .
-          </p>
+          <p>Uso do tabindex , que é uma propriedade html, define se o elemento pode ser selecionado ou não com a tecla tab .</p>
 
           <ul>
             <li>0 para true</li>
@@ -120,19 +70,14 @@
             <li>&lt;div class="card" tabindex="0"&gt; card ...&lt;/div&gt;</li>
           </ul>
 
-          <p>
-            Uso da propriedade alt em images, que fornece um texto alternativo
-            para uma imagem :
-          </p>
+          <p>Uso da propriedade alt em images, que fornece um texto alternativo para uma imagem :</p>
           <ul>
             <li>&lt;img src="" alt="Imagem de ..."/&gt;</li>
           </ul>
 
           <p>Uso da propriedade title em um link :</p>
           <ul>
-            <li>
-              &lt;a href="" title="Link para algum lugar"&gt; Link&lt;/a&gt;
-            </li>
+            <li>&lt;a href="" title="Link para algum lugar"&gt; Link&lt;/a&gt;</li>
           </ul>
         </div>
       </section>
@@ -140,22 +85,13 @@
       <section id="sectionAriaComponents" class="mt-5 container section">
         <div class="content">
           <p><strong>ARIA COMPONENTS</strong></p>
-          <p>
-            É uma especificação do W3C (W3C é a organização de padronização da
-            internet) onde define propriedades que ajudam na acessibilidade nos
-            navegadores.
-          </p>
-          <p>
-            Para alguns elementos que já possuem semântica na própria tag, o uso
-            de algumas tags aria se torna redundante.
-          </p>
+          <p>É uma especificação do W3C (W3C é a organização de padronização da internet) onde define propriedades que ajudam na acessibilidade nos navegadores.</p>
+          <p>Para alguns elementos que já possuem semântica na própria tag, o uso de algumas tags aria se torna redundante.</p>
 
           <ul>
             <li>
-              Uso da propriedade 'role' para elementos que não possui a
-              semântica na própria tag(ex : div) provê aos navegadores maior
-              entendimento sobre o contexto do elemento. ex&nbsp;:
-              (role="search").
+              Uso da propriedade 'role' para elementos que não possui a semântica na própria tag(ex : div) provê aos navegadores maior entendimento sobre o contexto do elemento.
+              ex&nbsp;: (role="search").
             </li>
 
             <li>
@@ -163,18 +99,11 @@
 
               <ul>
                 <li>
-                  aria-description : provê a um leitor a descrição mais
-                  detalhada do que é o elemento em que o cursor do mouse está
-                  apontado. ex : "aria-description='Botão de ver Avaliação' ".
+                  aria-description : provê a um leitor a descrição mais detalhada do que é o elemento em que o cursor do mouse está apontado. ex : "aria-description='Botão de ver
+                  Avaliação' ".
                 </li>
-                <li>
-                  aria-labelledby: provê uma descrição breve para o leitor de
-                  tela .
-                </li>
-                <li>
-                  aria-required : provê ao leitor de tela se o campo é
-                  obrigatório ou não .
-                </li>
+                <li>aria-labelledby: provê uma descrição breve para o leitor de tela .</li>
+                <li>aria-required : provê ao leitor de tela se o campo é obrigatório ou não .</li>
               </ul>
             </li>
           </ul>
@@ -185,16 +114,10 @@
         <div class="content">
           <p><strong>IMPLEMENTANDO VLIBRAS EM PÁGINAS WEB</strong></p>
           <p>
-            O VLibras Widget é um recurso de acessibilidade desenvolvido para
-            tornar páginas web acessíveis para pessoas surdas. Com a tradução
-            automática de Português Brasileiro para a Língua Brasileira de
-            Sinais (LIBRAS), essa ferramenta permite que usuários surdos sejam
-            capazes de consumir conteúdos de texto em qualquer website.
+            O VLibras Widget é um recurso de acessibilidade desenvolvido para tornar páginas web acessíveis para pessoas surdas. Com a tradução automática de Português Brasileiro
+            para a Língua Brasileira de Sinais (LIBRAS), essa ferramenta permite que usuários surdos sejam capazes de consumir conteúdos de texto em qualquer website.
           </p>
-          <a
-            href="https://vlibras.gov.br/doc/widget/installation/webpageintegration.html"
-            >Ver Site</a
-          >
+          <a href="https://vlibras.gov.br/doc/widget/installation/webpageintegration.html">Ver Site</a>
           <br />
         </div>
       </section>
@@ -204,37 +127,21 @@
           <p><strong>REFERÊNCIAS E APLICATIVOS </strong></p>
           <p>
             Aplicativo de leitor de tela<strong> :</strong>
-            <a rel="noopener" href="https://www.nvaccess.org/" target="_blank"
-              >https://www.nvaccess.org/</a
-            >
+            <a rel="noopener" href="https://www.nvaccess.org/" target="_blank">https://www.nvaccess.org/</a>
           </p>
           <p>
             Página Vue sobre acessibilidade:
-            <a
-              rel="noopener"
-              href="https://vuejsbr-docs-next.netlify.app/guide/a11y-basics.html"
-              target="_blank"
-            >
-              https://vuejsbr-docs-next.netlify.app/guide/a11y-basics.html</a
-            >
+            <a rel="noopener" href="https://vuejsbr-docs-next.netlify.app/guide/a11y-basics.html" target="_blank"> https://vuejsbr-docs-next.netlify.app/guide/a11y-basics.html</a>
           </p>
           <p>
             Página sobre ARIA :
-            <a
-              rel="noopener"
-              href="https://desenvolvimentoparaweb.com/miscelanea/aria-acessibilidade-web-a11y/"
-              target="_blank"
+            <a rel="noopener" href="https://desenvolvimentoparaweb.com/miscelanea/aria-acessibilidade-web-a11y/" target="_blank"
               >https://desenvolvimentoparaweb.com/miscelanea/aria-acessibilidade-web-a11y/</a
             >
           </p>
           <p>
             Página sobre semântica
-            <a
-              href="html : https://developer.mozilla.org/en-US/docs/Glossary/Semantics"
-              target="_blank"
-              >html :
-              https://developer.mozilla.org/en-US/docs/Glossary/Semantics</a
-            >
+            <a href="html : https://developer.mozilla.org/en-US/docs/Glossary/Semantics" target="_blank">html : https://developer.mozilla.org/en-US/docs/Glossary/Semantics</a>
           </p>
           <p>
             Página sobre semântica :
@@ -247,34 +154,20 @@
           </p>
           <p>
             Página sobre ARIA ROLES :
-            <a
-              rel="noopener"
-              href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles"
-              target="_blank"
+            <a rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles" target="_blank"
               >https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles</a
             >
           </p>
           <p>
             Página sobre ARIA ROLES :
-            <a
-              rel="noopener"
-              href=" https://www.codeinwp.com/blog/wai-aria-roles/"
-              target="_blank"
-            >
-              https://www.codeinwp.com/blog/wai-aria-roles/</a
-            >
+            <a rel="noopener" href=" https://www.codeinwp.com/blog/wai-aria-roles/" target="_blank"> https://www.codeinwp.com/blog/wai-aria-roles/</a>
           </p>
         </div>
       </section>
     </main>
     <!-- botão de subir pagina -->
     <button id="buttonNavigateTop" class="button-navigate-up">
-      <svg
-        width="30px"
-        height="30px"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 384 512"
-      >
+      <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
         <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
         <path
           fill="#fff"
@@ -285,9 +178,7 @@
 
     <footer class="py-5 pb-3 text-center footer">
       <div class="content">
-        <p class="m-0">
-          <strong>Desenvolvido por João Paulo &copy 2022</strong>
-        </p>
+        <p class="m-0">Desenvolvido por João Paulo &copy 2022</p>
       </div>
       <img class="waves" src="assets/waves.svg" alt="Imagem Ondas" />
     </footer>
