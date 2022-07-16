@@ -1,5 +1,5 @@
 <h1>Projeto Acessibilidade Web</h1>
-<h4>🚀 Landing Page sobre acessibilida na web e como desenvolvedores front-end podem utiliza-la.</h4>
+<h4>🚀 Landing Page sobre acessibilidade na web e como desenvolvedores front-end podem utilizá-la.</h4>
 
 <h2>🚧 Status do projeto</h2>
 <p>Concluído</p>
